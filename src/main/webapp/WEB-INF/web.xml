@@ -1,0 +1,94 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <description>Postgresql Rest demo</description>
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>CreateBookServlet</servlet-name>
+    <servlet-class>org.example.servlets.books.CreateBookServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateBookServlet</servlet-name>
+    <url-pattern>/books/create</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ReadBookById</servlet-name>
+    <servlet-class>org.example.servlets.books.ReadBookByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadBookById</servlet-name>
+    <url-pattern>/books/read</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateBookById</servlet-name>
+    <servlet-class>org.example.servlets.books.UpdateBookByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateBookById</servlet-name>
+    <url-pattern>/books/update</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteBookById</servlet-name>
+    <servlet-class>org.example.servlets.books.DeleteBookByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteBookById</servlet-name>
+    <url-pattern>/books/delete</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>CreateReviewServlet</servlet-name>
+    <servlet-class>org.example.servlets.reviews.CreateReviewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateReviewServlet</servlet-name>
+    <url-pattern>/reviews/create</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ReadReviewById</servlet-name>
+    <servlet-class>org.example.servlets.reviews.ReadReviewByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadReviewById</servlet-name>
+    <url-pattern>/reviews/read</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateReviewById</servlet-name>
+    <servlet-class>org.example.servlets.reviews.UpdateReviewByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateReviewById</servlet-name>
+    <url-pattern>/reviews/update</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteReviewById</servlet-name>
+    <servlet-class>org.example.servlets.reviews.DeleteReviewByIdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteReviewById</servlet-name>
+    <url-pattern>/reviews/delete</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>ReadBooksReviews</servlet-name>
+    <servlet-class>org.example.servlets.ReadBookReviewsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadBooksReviews</servlet-name>
+    <url-pattern>/books-reviews</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
